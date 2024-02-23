@@ -110,31 +110,6 @@ def unison_shuffled_copies(a, b):
     return a[p], b[p]
 
 
-# def load_elmo(path, max_len=200):
-#     '''
-#     load ELMo embedding from tsv file.
-#     :param path: tsv file path.
-#     :param to_pickle: Convert elmo embeddings to .npy file, avoid read and pad every time.
-#     :return: elmo embedding and its label.
-#     '''
-#     X = []
-#     label = []
-#     l_encoder = LabelEncoder()
-#     with open(path, 'rb') as inf:
-#         for line in inf:
-#             gzip_fields = line.decode('utf-8').split('\t')
-#             gzip_label = gzip_fields[1]
-#             elmo_embd_str = gzip_fields[4].strip()
-#             elmo_embd_list = ast.literal_eval(elmo_embd_str)
-#             elmo_embd_array = np.array(elmo_embd_list)
-#             padded_seq = sequence.pad_sequences([elmo_embd_array], maxlen=max_len, dtype='float32')[0]
-#             X.append(padded_seq)
-#             label.append(gzip_label)
-#     Y = l_encoder.fit_transform(label)
-#
-#     return np.array(X), np.array(Y)
-
-
 def load_elmo_list(path_list, category_size=-1, max_len=200, shuffle=False):
     X = []
     label = []
