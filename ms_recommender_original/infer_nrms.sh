@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd /root/ms_recommender_original
+
 if test $5 = "gen_news"; then
   echo "gen_news"
   python inference_nrms.py \
