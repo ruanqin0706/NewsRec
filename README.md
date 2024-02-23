@@ -2,11 +2,13 @@
 
 The source code of article titled "The Effects of Media Bias on News Recommendations"
 
-The dataset we used to train the media bias detector : [Data for PAN at SemEval 2019 Task 4: Hyperpartisan News Detection](https://zenodo.org/record/1489920#.Y4jrzezP23I)
+Hyperpartisan News Detection Dataset is a media bias detection dataset which classifies the news articles into bias news articles and unbias news articles. 
+More details: [Data for PAN at SemEval 2019 Task 4: Hyperpartisan News Detection](https://zenodo.org/record/1489920#.Y4jrzezP23I)
 
-The dataset we used to train news recommendation algorithms: [MIND: MIcrosoft News Dataset](https://msnews.github.io/)
+MIcrosft News Dataset (MIND) is a large scale English-based news recommendation dataset.
+More details: [MIND: MIcrosoft News Dataset](https://msnews.github.io/)
 
-The directory structure of the code is as follows:
+The structure of the code is as follows:
  - bias_detector: the source code for detecting media bias
  - ms_recommender_original: NPA, NAML, LSTUR and NRMS are implemented using the source code from [Microsoft Recommenders repository](https://github.com/microsoft/recommenders).
  - news_recommendation: FIM, PLM-empowered are re-implemented under this folder.
